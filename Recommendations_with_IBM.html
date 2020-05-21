@@ -14876,6 +14876,8 @@ The top 10 recommendations for user 20 are the following article names:
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Provide your response here.</strong></p>
+<p>Using the functions developed so far I think the only solution is the function <strong>get_top_article_ids(10)</strong>, so that the new user receive the top 10 of the most interacted articles among the whole user base. It is not the best option, since we are providing a list of the most viewed articles by the whole community. It does not mean that they are the most interesting for that specific user, it is just a general indication.</p>
+<p>Using another approach Another solution can be the use of a knowledge based or content based recommendation engines to solve the cold start problem, as suggested during the lectures about Reccomendation Engines.</p>
 
 </div>
 </div>
@@ -15277,6 +15279,7 @@ The top 10 recommendations for user 20 are the following article names:
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Provide your response here.</strong></p>
+<p>The reason why we don't need <strong>FunkSVD</strong> is the absence of NaN in the <strong>user_item_matrix</strong>. During the lectures, <strong>user_item_matrix</strong> was made by user ratings. In case of absence of rating, there was a NaN. For this reason, the matrix was very sparse and needed a different approach. In our case, the way we model user-item interactions is far way simplier (0-1) and does not include the presence of NaNs.</p>
 
 </div>
 </div>
